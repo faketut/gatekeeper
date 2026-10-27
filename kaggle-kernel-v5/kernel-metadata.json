@@ -1,0 +1,16 @@
+{
+  "id": "jj00nnn/gatekeeper-ieee-cis-full-training",
+  "title": "Gatekeeper IEEE-CIS full training",
+  "code_file": "train_full_v5.py",
+  "language": "python",
+  "kernel_type": "script",
+  "is_private": true,
+  "enable_gpu": false,
+  "enable_internet": false,
+  "dataset_sources": [
+    "lnasiri007/ieeecis-fraud-detection"
+  ],
+  "competition_sources": [],
+  "kernel_sources": [],
+  "model_sources": []
+}

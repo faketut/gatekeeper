@@ -1,0 +1,76 @@
+[{"stream_name":"stdout","time":43.586880957,"data":"identity joined: 590540 rows, 144233 identity rows\n"}
+,{"stream_name":"stdout","time":43.588404202,"data":"loaded 590540 rows, fraud rate 0.0350\n"}
+,{"stream_name":"stdout","time":52.335169728,"data":"features: 450 (400 numeric, 18 FE, 31 categorical)\n"}
+,{"stream_name":"stdout","time":75.786861057,"data":"training A: LGBM v3-params + FE (median fill)…\n"}
+,{"stream_name":"stdout","time":183.660152763,"data":"training B: LGBM tuned + FE (median fill)…\n"}
+,{"stream_name":"stdout","time":658.441562227,"data":"training C: LGBM tuned + FE (NaN preserved)…\n"}
+,{"stream_name":"stdout","time":1267.784060856,"data":"training D: XGBoost + FE (NaN preserved)…\n"}
+,{"stream_name":"stderr","time":3620.315217574,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names\n"}
+,{"stream_name":"stderr","time":3620.315280937,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":3623.614793525,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names\n"}
+,{"stream_name":"stderr","time":3623.614842136,"data":"  warnings.warn(\n"}
+,{"stream_name":"stdout","time":3626.899115304,"data":"A_lgbm_v3_fe: cal raw AP 0.7945 AUC 0.9669 | test AUC 0.9701 AP 0.8044\n"}
+,{"stream_name":"stderr","time":3626.899868635,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names\n"}
+,{"stream_name":"stderr","time":3626.899899373,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":3647.812081437,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names\n"}
+,{"stream_name":"stderr","time":3647.812150676,"data":"  warnings.warn(\n"}
+,{"stream_name":"stdout","time":3670.957311646,"data":"B_lgbm_tuned_fe: cal raw AP 0.8665 AUC 0.9750 | test AUC 0.9771 AP 0.8711\n"}
+,{"stream_name":"stderr","time":3670.958417842,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names\n"}
+,{"stream_name":"stderr","time":3670.958450593,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":3696.008501177,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names\n"}
+,{"stream_name":"stderr","time":3696.008539297,"data":"  warnings.warn(\n"}
+,{"stream_name":"stdout","time":3723.199315158,"data":"C_lgbm_tuned_fe_nan: cal raw AP 0.8650 AUC 0.9744 | test AUC 0.9761 AP 0.8696\n"}
+,{"stream_name":"stdout","time":3730.84549585,"data":"D_xgb_fe_nan: cal raw AP 0.8200 AUC 0.9701 | test AUC 0.9722 AP 0.8309\n"}
+,{"stream_name":"stdout","time":3730.84555323,"data":"SELECTED (cal raw AP): B_lgbm_tuned_fe\n"}
+,{"stream_name":"stderr","time":3730.849901261,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names\n"}
+,{"stream_name":"stderr","time":3730.849991051,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":3752.265188103,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names\n"}
+,{"stream_name":"stderr","time":3752.265234867,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":3778.935332513,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names\n"}
+,{"stream_name":"stderr","time":3778.935383129,"data":"  warnings.warn(\n"}
+,{"stream_name":"stdout","time":3803.140615874,"data":"{\n"}
+,{"stream_name":"stdout","time":3803.140697053,"data":"  \"review\": {\n"}
+,{"stream_name":"stdout","time":3803.140704695,"data":"    \"threshold\": 0.0455,\n"}
+,{"stream_name":"stdout","time":3803.140710051,"data":"    \"precision\": 0.4437,\n"}
+,{"stream_name":"stdout","time":3803.140715239,"data":"    \"recall\": 0.9051,\n"}
+,{"stream_name":"stdout","time":3803.140720254,"data":"    \"tp\": 2805,\n"}
+,{"stream_name":"stdout","time":3803.140729731,"data":"    \"fp\": 3517,\n"}
+,{"stream_name":"stdout","time":3803.14073349,"data":"    \"fn\": 294,\n"}
+,{"stream_name":"stdout","time":3803.140736909,"data":"    \"tn\": 81965\n"}
+,{"stream_name":"stdout","time":3803.140740439,"data":"  },\n"}
+,{"stream_name":"stdout","time":3803.140744259,"data":"  \"block\": {\n"}
+,{"stream_name":"stdout","time":3803.140747631,"data":"    \"threshold\": 0.575,\n"}
+,{"stream_name":"stdout","time":3803.140751147,"data":"    \"precision\": 0.9287,\n"}
+,{"stream_name":"stdout","time":3803.140754597,"data":"    \"recall\": 0.7477,\n"}
+,{"stream_name":"stdout","time":3803.140758297,"data":"    \"tp\": 2317,\n"}
+,{"stream_name":"stdout","time":3803.140776491,"data":"    \"fp\": 178,\n"}
+,{"stream_name":"stdout","time":3803.140782911,"data":"    \"fn\": 782,\n"}
+,{"stream_name":"stdout","time":3803.140848863,"data":"    \"tn\": 85304\n"}
+,{"stream_name":"stdout","time":3803.14085379,"data":"  },\n"}
+,{"stream_name":"stdout","time":3803.140857133,"data":"  \"roc_auc\": 0.9771,\n"}
+,{"stream_name":"stdout","time":3803.140862056,"data":"  \"average_precision\": 0.8711,\n"}
+,{"stream_name":"stdout","time":3803.140879811,"data":"  \"test_n\": 88581,\n"}
+,{"stream_name":"stdout","time":3803.140885706,"data":"  \"test_fraud\": 3099,\n"}
+,{"stream_name":"stdout","time":3803.140891164,"data":"  \"expected_loss\": {\n"}
+,{"stream_name":"stdout","time":3803.140896808,"data":"    \"gated_loss_per_10k\": 6587.29,\n"}
+,{"stream_name":"stdout","time":3803.140902018,"data":"    \"no_gate_loss_per_10k\": 51593.48,\n"}
+,{"stream_name":"stdout","time":3803.140907357,"data":"    \"blocked\": 2495,\n"}
+,{"stream_name":"stdout","time":3803.140912404,"data":"    \"reviewed\": 3827,\n"}
+,{"stream_name":"stdout","time":3803.14091743,"data":"    \"missed_fraud\": 294,\n"}
+,{"stream_name":"stdout","time":3803.140922728,"data":"    \"false_blocked\": 178,\n"}
+,{"stream_name":"stdout","time":3803.140928495,"data":"    \"assumptions\": {\n"}
+,{"stream_name":"stdout","time":3803.140959737,"data":"      \"review_cost_usd\": 2.0,\n"}
+,{"stream_name":"stdout","time":3803.140966815,"data":"      \"false_block_cost_usd\": 15.0,\n"}
+,{"stream_name":"stdout","time":3803.140972971,"data":"      \"fraud_loss\": \"transaction amount\",\n"}
+,{"stream_name":"stdout","time":3803.140978093,"data":"      \"review_outcome\": \"review catches fraud (human resolves correctly)\"\n"}
+,{"stream_name":"stdout","time":3803.140983662,"data":"    }\n"}
+,{"stream_name":"stdout","time":3803.140988503,"data":"  }\n"}
+,{"stream_name":"stdout","time":3803.140993832,"data":"}\n"}
+,{"stream_name":"stdout","time":3804.365459213,"data":"Wrote model.pkl, metrics.json, model_card.md, versions.json, feature_importance.json\n"}
+,{"stream_name":"stderr","time":3809.814171128,"data":"/usr/local/lib/python3.13/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\\|'\n"}
+,{"stream_name":"stderr","time":3809.814259698,"data":"  cells[i][c] = re.sub('\\\\\\\\\\|', '|', cell)\n"}
+,{"stream_name":"stderr","time":3810.496788147,"data":"/usr/local/lib/python3.13/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\\_'\n"}
+,{"stream_name":"stderr","time":3810.496841406,"data":"  text = re.sub(r'_', '\\_', text) # Escape underscores in display text\n"}
+,{"stream_name":"stderr","time":3812.212689252,"data":"[NbConvertApp] Converting notebook __script__.ipynb to html\n"}
+,{"stream_name":"stderr","time":3814.51515591,"data":"[NbConvertApp] Writing 369649 bytes to __results__.html\n"}
+]

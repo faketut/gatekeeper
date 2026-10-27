@@ -1,0 +1,18 @@
+.env
+.venv/
+__pycache__/
+*.pyc
+decisions.jsonl
+demo/*.jsonl
+data/
+artifacts-test/
+model.json
+metrics.json
+*.pkl
+# The live model is the exception: the public repo ships the verified
+# v4 model (41MB, under GitHub's 100MB file limit) so /propose-ieee
+# works out of the box. Backups and the 123MB v5 experiment stay out.
+artifacts/*
+!artifacts/model.pkl
+!artifacts/metrics.json
+!artifacts/model_card-kaggle-v4.md

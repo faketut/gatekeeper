@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"><title>Gatekeeper — approval queue</title>
+<style>body{font-family:system-ui,sans-serif;max-width:720px;margin:2rem auto;padding:0 1rem}
+.card{border:1px solid #ccc;border-radius:8px;padding:1rem;margin:1rem 0}
+.REVIEW{border-color:#c90}.ALLOW{border-color:#090}.BLOCK{border-color:#900}
+button{margin-right:.5rem}</style></head>
+<body>
+<h1>Gatekeeper — payments awaiting human approval</h1>
+<p>Start the gateway first: <code>uvicorn gateway.app:app --reload</code>, then refresh.</p>
+<div id="queue">Loading…</div>
+<script>
+async function load() {
+  const res = await fetch('http://localhost:8000/decisions');
+  const items = await res.json();
+  const queue = items.filter(d => d.verdict === 'REVIEW');
+  document.getElementById('queue').innerHTML = queue.length ? queue.map(d => `
+    <div class="card REVIEW"><b>$${d.transaction.amount_usd}</b> — ${d.transaction.merchant_category}
+    <br>risk ${(d.probability*100).toFixed(1)}% — ${d.reasons.join('; ')}
+    <br><small>${d.id} · status: ${d.status}</small>
+    <br><button onclick="act('${d.id}','approve')">Approve</button>
+    <button onclick="act('${d.id}','reject')">Reject</button>
+    <button onclick="act('${d.id}','execute')">Create PayPal order</button>
+    <button onclick="act('${d.id}','capture')">Capture</button>
+    ${d.paypal_order_id ? `<br><small>PayPal order: ${d.paypal_order_id}</small>` : ''}</div>`).join('')
+    : '<p>No payments awaiting approval.</p>';
+}
+async function act(id, verb) {
+  await fetch(`http://localhost:8000/decisions/${id}/${verb}`, {method: 'POST'});
+  load();
+}
+load();
+</script>
+</body></html>

@@ -1,0 +1,57 @@
+[{"stream_name":"stdout","time":33.012982569,"data":"identity joined: 590540 rows, 144233 identity rows\n"}
+,{"stream_name":"stdout","time":33.014520466,"data":"loaded 590540 rows, fraud rate 0.0350\n"}
+,{"stream_name":"stdout","time":33.033090509,"data":"features: 432 (400 numeric, 31 categorical)\n"}
+,{"stream_name":"stdout","time":57.269519482,"data":"model: LightGBM 4.6.0\n"}
+,{"stream_name":"stdout","time":57.269562336,"data":"training lightgbm on 413378 rows…\n"}
+,{"stream_name":"stderr","time":139.86375628,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names\n"}
+,{"stream_name":"stderr","time":139.863835987,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":143.050269446,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names\n"}
+,{"stream_name":"stderr","time":143.050327434,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":146.073366932,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names\n"}
+,{"stream_name":"stderr","time":146.073429589,"data":"  warnings.warn(\n"}
+,{"stream_name":"stdout","time":149.232964077,"data":"{\n"}
+,{"stream_name":"stdout","time":149.233035099,"data":"  \"review\": {\n"}
+,{"stream_name":"stdout","time":149.233043182,"data":"    \"threshold\": 0.0279,\n"}
+,{"stream_name":"stdout","time":149.233049775,"data":"    \"precision\": 0.2358,\n"}
+,{"stream_name":"stdout","time":149.233056015,"data":"    \"recall\": 0.9077,\n"}
+,{"stream_name":"stdout","time":149.23306272,"data":"    \"tp\": 2813,\n"}
+,{"stream_name":"stdout","time":149.23306852,"data":"    \"fp\": 9117,\n"}
+,{"stream_name":"stdout","time":149.233074191,"data":"    \"fn\": 286,\n"}
+,{"stream_name":"stdout","time":149.233079222,"data":"    \"tn\": 76365\n"}
+,{"stream_name":"stdout","time":149.233084324,"data":"  },\n"}
+,{"stream_name":"stdout","time":149.233089474,"data":"  \"block\": {\n"}
+,{"stream_name":"stdout","time":149.233094619,"data":"    \"threshold\": 0.6279,\n"}
+,{"stream_name":"stdout","time":149.2330998,"data":"    \"precision\": 0.9206,\n"}
+,{"stream_name":"stdout","time":149.233105084,"data":"    \"recall\": 0.5502,\n"}
+,{"stream_name":"stdout","time":149.233110119,"data":"    \"tp\": 1705,\n"}
+,{"stream_name":"stdout","time":149.23311529,"data":"    \"fp\": 147,\n"}
+,{"stream_name":"stdout","time":149.233121332,"data":"    \"fn\": 1394,\n"}
+,{"stream_name":"stdout","time":149.233125127,"data":"    \"tn\": 85335\n"}
+,{"stream_name":"stdout","time":149.233129084,"data":"  },\n"}
+,{"stream_name":"stdout","time":149.233168729,"data":"  \"roc_auc\": 0.9647,\n"}
+,{"stream_name":"stdout","time":149.233175295,"data":"  \"average_precision\": 0.7785,\n"}
+,{"stream_name":"stdout","time":149.233181324,"data":"  \"test_n\": 88581,\n"}
+,{"stream_name":"stdout","time":149.233186764,"data":"  \"test_fraud\": 3099,\n"}
+,{"stream_name":"stdout","time":149.23319221,"data":"  \"expected_loss\": {\n"}
+,{"stream_name":"stdout","time":149.233197944,"data":"    \"gated_loss_per_10k\": 7857.17,\n"}
+,{"stream_name":"stdout","time":149.233203433,"data":"    \"no_gate_loss_per_10k\": 51593.48,\n"}
+,{"stream_name":"stdout","time":149.233208986,"data":"    \"blocked\": 1852,\n"}
+,{"stream_name":"stdout","time":149.233214592,"data":"    \"reviewed\": 10078,\n"}
+,{"stream_name":"stdout","time":149.23321982,"data":"    \"missed_fraud\": 286,\n"}
+,{"stream_name":"stdout","time":149.233253886,"data":"    \"false_blocked\": 147,\n"}
+,{"stream_name":"stdout","time":149.233259491,"data":"    \"assumptions\": {\n"}
+,{"stream_name":"stdout","time":149.23326337,"data":"      \"review_cost_usd\": 2.0,\n"}
+,{"stream_name":"stdout","time":149.233267199,"data":"      \"false_block_cost_usd\": 15.0,\n"}
+,{"stream_name":"stdout","time":149.233271112,"data":"      \"fraud_loss\": \"transaction amount\",\n"}
+,{"stream_name":"stdout","time":149.233275387,"data":"      \"review_outcome\": \"review catches fraud (human resolves correctly)\"\n"}
+,{"stream_name":"stdout","time":149.233279911,"data":"    }\n"}
+,{"stream_name":"stdout","time":149.233283809,"data":"  }\n"}
+,{"stream_name":"stdout","time":149.233288142,"data":"}\n"}
+,{"stream_name":"stdout","time":149.359657457,"data":"Wrote model.pkl, metrics.json, model_card.md, versions.json to /kaggle/working\n"}
+,{"stream_name":"stderr","time":152.878004975,"data":"/usr/local/lib/python3.13/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\\|'\n"}
+,{"stream_name":"stderr","time":152.878048561,"data":"  cells[i][c] = re.sub('\\\\\\\\\\|', '|', cell)\n"}
+,{"stream_name":"stderr","time":153.221439781,"data":"/usr/local/lib/python3.13/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\\_'\n"}
+,{"stream_name":"stderr","time":153.221480768,"data":"  text = re.sub(r'_', '\\_', text) # Escape underscores in display text\n"}
+,{"stream_name":"stderr","time":154.197186367,"data":"[NbConvertApp] Converting notebook __script__.ipynb to html\n"}
+,{"stream_name":"stderr","time":155.604925865,"data":"[NbConvertApp] Writing 334648 bytes to __results__.html\n"}
+]

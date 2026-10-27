@@ -1,0 +1,17 @@
+# Core demo + tests run on stdlib only. Install these for the full stack:
+fastapi
+uvicorn
+httpx
+pandas
+scikit-learn
+# xgboost is used if installed, otherwise the trainer falls back to
+# sklearn HistGradientBoosting (the sandbox egress interrupted the
+# 305MB CUDA wheel download for xgboost on 2026-10-27; retry on a
+# better connection if you want the XGBoost variant):
+# xgboost
+# Kaggle download only (needs a Kaggle API token, see scripts/download_ieee.py):
+# kaggle
+# PayPal Agent Toolkit (dependency, not a fork) — direct REST in
+# gatekeeper/paypal_client.py is the primary path; the toolkit is an
+# alternative agent adapter, not required for the gateway:
+# paypal-agent-toolkit

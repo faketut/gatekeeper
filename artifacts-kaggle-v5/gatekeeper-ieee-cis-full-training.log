@@ -1,0 +1,135 @@
+[{"stream_name":"stdout","time":37.451156041,"data":"identity joined: 590540 rows, 144233 identity rows\n"}
+,{"stream_name":"stdout","time":37.452710299,"data":"loaded 590540 rows, fraud rate 0.0350\n"}
+,{"stream_name":"stdout","time":63.289232227,"data":"features: 457 (400 numeric, 25 FE, 31 categorical)\n"}
+,{"stream_name":"stdout","time":93.129291795,"data":"training LGBM tuned seed 42 (median fill)…\n"}
+,{"stream_name":"stdout","time":504.411899145,"data":"training LGBM tuned seed 2026 (median fill)…\n"}
+,{"stream_name":"stdout","time":955.594376367,"data":"training LGBM tuned seed 7 (median fill)…\n"}
+,{"stream_name":"stdout","time":1336.220790006,"data":"training LGBM tuned (NaN)…\n"}
+,{"stream_name":"stdout","time":1936.256068402,"data":"training XGBoost (NaN)…\n"}
+,{"stream_name":"stdout","time":3595.387384518,"data":"training CatBoost (NaN, categorical indices)…\n"}
+,{"stream_name":"stdout","time":3598.495851121,"data":"CatBoost unavailable/failed, skipping: 'data' is numpy array of floating point numerical type, it means no categorical features, but 'cat_features' parameter specifies nonzero number of categorical features\n"}
+,{"stream_name":"stderr","time":3598.506604705,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names\n"}
+,{"stream_name":"stderr","time":3598.506642168,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":3619.659346813,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names\n"}
+,{"stream_name":"stderr","time":3619.659412868,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":3639.061114594,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names\n"}
+,{"stream_name":"stderr","time":3639.061183306,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":3660.764041495,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names\n"}
+,{"stream_name":"stderr","time":3660.764099943,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":3700.991129628,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names\n"}
+,{"stream_name":"stderr","time":3700.991209705,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":3739.542983204,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names\n"}
+,{"stream_name":"stderr","time":3739.543030704,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":3771.469501384,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names\n"}
+,{"stream_name":"stderr","time":3771.469549805,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":3807.786343385,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names\n"}
+,{"stream_name":"stderr","time":3807.786414468,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":3844.319713135,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names\n"}
+,{"stream_name":"stderr","time":3844.31978064,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":3872.821042317,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names\n"}
+,{"stream_name":"stderr","time":3872.821087227,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":3902.209341859,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names\n"}
+,{"stream_name":"stderr","time":3902.209424133,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":3931.541904953,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names\n"}
+,{"stream_name":"stderr","time":3931.541983748,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":3965.919345857,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names\n"}
+,{"stream_name":"stderr","time":3965.919404277,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":3993.249261151,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names\n"}
+,{"stream_name":"stderr","time":3993.249342874,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":4028.031297946,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names\n"}
+,{"stream_name":"stderr","time":4028.031363929,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":4062.187963862,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names\n"}
+,{"stream_name":"stderr","time":4062.188025859,"data":"  warnings.warn(\n"}
+,{"stream_name":"stdout","time":4090.107217477,"data":"seed_avg: cal raw AP 0.8744 AUC 0.9761 | test AUC 0.9772 AP 0.8724\n"}
+,{"stream_name":"stdout","time":4090.242676832,"data":"lgbm_nan: cal raw AP 0.8724 AUC 0.9753 | test AUC 0.977 AP 0.8725\n"}
+,{"stream_name":"stdout","time":4090.384052729,"data":"xgb: cal raw AP 0.8180 AUC 0.9705 | test AUC 0.971 AP 0.8189\n"}
+,{"stream_name":"stdout","time":4090.521369414,"data":"ensemble: cal raw AP 0.8695 AUC 0.9761 | test AUC 0.9768 AP 0.8666\n"}
+,{"stream_name":"stdout","time":4090.52141961,"data":"SELECTED (cal raw AP): seed_avg\n"}
+,{"stream_name":"stdout","time":4091.029819099,"data":"{\n"}
+,{"stream_name":"stdout","time":4091.029862913,"data":"  \"review\": {\n"}
+,{"stream_name":"stdout","time":4091.029869391,"data":"    \"threshold\": 0.0397,\n"}
+,{"stream_name":"stdout","time":4091.029874084,"data":"    \"precision\": 0.45,\n"}
+,{"stream_name":"stdout","time":4091.029877429,"data":"    \"recall\": 0.9038,\n"}
+,{"stream_name":"stdout","time":4091.029913643,"data":"    \"tp\": 2801,\n"}
+,{"stream_name":"stdout","time":4091.029918396,"data":"    \"fp\": 3424,\n"}
+,{"stream_name":"stdout","time":4091.029921348,"data":"    \"fn\": 298,\n"}
+,{"stream_name":"stdout","time":4091.029924356,"data":"    \"tn\": 82058\n"}
+,{"stream_name":"stdout","time":4091.029927369,"data":"  },\n"}
+,{"stream_name":"stdout","time":4091.029930567,"data":"  \"block\": {\n"}
+,{"stream_name":"stdout","time":4091.02996303,"data":"    \"threshold\": 0.3846,\n"}
+,{"stream_name":"stdout","time":4091.0299903,"data":"    \"precision\": 0.9075,\n"}
+,{"stream_name":"stdout","time":4091.029994641,"data":"    \"recall\": 0.7725,\n"}
+,{"stream_name":"stdout","time":4091.029998271,"data":"    \"tp\": 2394,\n"}
+,{"stream_name":"stdout","time":4091.030002646,"data":"    \"fp\": 244,\n"}
+,{"stream_name":"stdout","time":4091.030005281,"data":"    \"fn\": 705,\n"}
+,{"stream_name":"stdout","time":4091.030007812,"data":"    \"tn\": 85238\n"}
+,{"stream_name":"stdout","time":4091.030010386,"data":"  },\n"}
+,{"stream_name":"stdout","time":4091.030012659,"data":"  \"roc_auc\": 0.9772,\n"}
+,{"stream_name":"stdout","time":4091.030015101,"data":"  \"average_precision\": 0.8724,\n"}
+,{"stream_name":"stdout","time":4091.030017683,"data":"  \"test_n\": 88581,\n"}
+,{"stream_name":"stdout","time":4091.030020045,"data":"  \"test_fraud\": 3099,\n"}
+,{"stream_name":"stdout","time":4091.030022344,"data":"  \"expected_loss\": {\n"}
+,{"stream_name":"stdout","time":4091.030024866,"data":"    \"gated_loss_per_10k\": 6678.35,\n"}
+,{"stream_name":"stdout","time":4091.030027706,"data":"    \"no_gate_loss_per_10k\": 51593.48,\n"}
+,{"stream_name":"stdout","time":4091.030030173,"data":"    \"blocked\": 2638,\n"}
+,{"stream_name":"stdout","time":4091.030032539,"data":"    \"reviewed\": 3587,\n"}
+,{"stream_name":"stdout","time":4091.030034914,"data":"    \"missed_fraud\": 298,\n"}
+,{"stream_name":"stdout","time":4091.030037481,"data":"    \"false_blocked\": 244,\n"}
+,{"stream_name":"stdout","time":4091.030039837,"data":"    \"assumptions\": {\n"}
+,{"stream_name":"stdout","time":4091.030042117,"data":"      \"review_cost_usd\": 2.0,\n"}
+,{"stream_name":"stdout","time":4091.030044499,"data":"      \"false_block_cost_usd\": 15.0,\n"}
+,{"stream_name":"stdout","time":4091.030047075,"data":"      \"fraud_loss\": \"transaction amount\",\n"}
+,{"stream_name":"stdout","time":4091.03004978,"data":"      \"review_outcome\": \"review catches fraud (human resolves correctly)\"\n"}
+,{"stream_name":"stdout","time":4091.030052472,"data":"    }\n"}
+,{"stream_name":"stdout","time":4091.030055549,"data":"  },\n"}
+,{"stream_name":"stdout","time":4091.030057719,"data":"  \"loss_optimal\": {\n"}
+,{"stream_name":"stdout","time":4091.030060032,"data":"    \"cal_thresholds\": {\n"}
+,{"stream_name":"stdout","time":4091.030062364,"data":"      \"review\": 0.009962640099626401,\n"}
+,{"stream_name":"stdout","time":4091.030064782,"data":"      \"block\": 0.8738461538461538\n"}
+,{"stream_name":"stdout","time":4091.030067362,"data":"    },\n"}
+,{"stream_name":"stdout","time":4091.030069664,"data":"    \"test\": {\n"}
+,{"stream_name":"stdout","time":4091.030072046,"data":"      \"review\": {\n"}
+,{"stream_name":"stdout","time":4091.030074424,"data":"        \"threshold\": 0.01,\n"}
+,{"stream_name":"stdout","time":4091.030076722,"data":"        \"precision\": 0.2163,\n"}
+,{"stream_name":"stdout","time":4091.030079081,"data":"        \"recall\": 0.9432,\n"}
+,{"stream_name":"stdout","time":4091.030081404,"data":"        \"tp\": 2923,\n"}
+,{"stream_name":"stdout","time":4091.030083708,"data":"        \"fp\": 10590,\n"}
+,{"stream_name":"stdout","time":4091.030086262,"data":"        \"fn\": 176,\n"}
+,{"stream_name":"stdout","time":4091.030088623,"data":"        \"tn\": 74892\n"}
+,{"stream_name":"stdout","time":4091.030090949,"data":"      },\n"}
+,{"stream_name":"stdout","time":4091.030093285,"data":"      \"block\": {\n"}
+,{"stream_name":"stdout","time":4091.03009557,"data":"        \"threshold\": 0.8738,\n"}
+,{"stream_name":"stdout","time":4091.030097952,"data":"        \"precision\": 0.9764,\n"}
+,{"stream_name":"stdout","time":4091.030109909,"data":"        \"recall\": 0.6554,\n"}
+,{"stream_name":"stdout","time":4091.030112434,"data":"        \"tp\": 2031,\n"}
+,{"stream_name":"stdout","time":4091.030114896,"data":"        \"fp\": 49,\n"}
+,{"stream_name":"stdout","time":4091.030117274,"data":"        \"fn\": 1068,\n"}
+,{"stream_name":"stdout","time":4091.030119593,"data":"        \"tn\": 85433\n"}
+,{"stream_name":"stdout","time":4091.030122821,"data":"      },\n"}
+,{"stream_name":"stdout","time":4091.030125078,"data":"      \"roc_auc\": 0.9772,\n"}
+,{"stream_name":"stdout","time":4091.030127449,"data":"      \"average_precision\": 0.8724\n"}
+,{"stream_name":"stdout","time":4091.030129831,"data":"    },\n"}
+,{"stream_name":"stdout","time":4091.030132031,"data":"    \"test_expected_loss\": {\n"}
+,{"stream_name":"stdout","time":4091.030134588,"data":"      \"gated_loss_per_10k\": 6410.18,\n"}
+,{"stream_name":"stdout","time":4091.030137072,"data":"      \"no_gate_loss_per_10k\": 51593.48,\n"}
+,{"stream_name":"stdout","time":4091.030139452,"data":"      \"blocked\": 2080,\n"}
+,{"stream_name":"stdout","time":4091.030141854,"data":"      \"reviewed\": 11433,\n"}
+,{"stream_name":"stdout","time":4091.030144181,"data":"      \"missed_fraud\": 176,\n"}
+,{"stream_name":"stdout","time":4091.030146499,"data":"      \"false_blocked\": 49,\n"}
+,{"stream_name":"stdout","time":4091.030149483,"data":"      \"assumptions\": {\n"}
+,{"stream_name":"stdout","time":4091.030151793,"data":"        \"review_cost_usd\": 2.0,\n"}
+,{"stream_name":"stdout","time":4091.030175984,"data":"        \"false_block_cost_usd\": 15.0,\n"}
+,{"stream_name":"stdout","time":4091.030178955,"data":"        \"fraud_loss\": \"transaction amount\",\n"}
+,{"stream_name":"stdout","time":4091.030181565,"data":"        \"review_outcome\": \"review catches fraud (human resolves correctly)\"\n"}
+,{"stream_name":"stdout","time":4091.030184087,"data":"      }\n"}
+,{"stream_name":"stdout","time":4091.030186345,"data":"    }\n"}
+,{"stream_name":"stdout","time":4091.03018855,"data":"  }\n"}
+,{"stream_name":"stdout","time":4091.030191018,"data":"}\n"}
+,{"stream_name":"stdout","time":4094.073050184,"data":"Wrote model.pkl, metrics.json, model_card.md, versions.json, feature_importance.json\n"}
+,{"stream_name":"stderr","time":4099.226976972,"data":"/usr/local/lib/python3.13/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\\|'\n"}
+,{"stream_name":"stderr","time":4099.227033158,"data":"  cells[i][c] = re.sub('\\\\\\\\\\|', '|', cell)\n"}
+,{"stream_name":"stderr","time":4099.662994045,"data":"/usr/local/lib/python3.13/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\\_'\n"}
+,{"stream_name":"stderr","time":4099.663035236,"data":"  text = re.sub(r'_', '\\_', text) # Escape underscores in display text\n"}
+,{"stream_name":"stderr","time":4100.782828094,"data":"[NbConvertApp] Converting notebook __script__.ipynb to html\n"}
+,{"stream_name":"stderr","time":4101.580724527,"data":"[NbConvertApp] Writing 409121 bytes to __results__.html\n"}
+]

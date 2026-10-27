@@ -1,0 +1,145 @@
+{
+  "A_lgbm_v3_fe": {
+    "cal_raw_ap": 0.7945,
+    "cal_raw_auc": 0.9669,
+    "test": {
+      "review": {
+        "threshold": 0.0325,
+        "precision": 0.2663,
+        "recall": 0.91,
+        "tp": 2820,
+        "fp": 7768,
+        "fn": 279,
+        "tn": 77714
+      },
+      "block": {
+        "threshold": 0.6933,
+        "precision": 0.9257,
+        "recall": 0.6028,
+        "tp": 1868,
+        "fp": 150,
+        "fn": 1231,
+        "tn": 85332
+      },
+      "roc_auc": 0.9701,
+      "average_precision": 0.8044
+    }
+  },
+  "B_lgbm_tuned_fe": {
+    "cal_raw_ap": 0.8665,
+    "cal_raw_auc": 0.975,
+    "test": {
+      "review": {
+        "threshold": 0.0455,
+        "precision": 0.4437,
+        "recall": 0.9051,
+        "tp": 2805,
+        "fp": 3517,
+        "fn": 294,
+        "tn": 81965
+      },
+      "block": {
+        "threshold": 0.575,
+        "precision": 0.9287,
+        "recall": 0.7477,
+        "tp": 2317,
+        "fp": 178,
+        "fn": 782,
+        "tn": 85304
+      },
+      "roc_auc": 0.9771,
+      "average_precision": 0.8711
+    }
+  },
+  "C_lgbm_tuned_fe_nan": {
+    "cal_raw_ap": 0.865,
+    "cal_raw_auc": 0.9744,
+    "test": {
+      "review": {
+        "threshold": 0.0339,
+        "precision": 0.3984,
+        "recall": 0.9126,
+        "tp": 2828,
+        "fp": 4271,
+        "fn": 271,
+        "tn": 81211
+      },
+      "block": {
+        "threshold": 0.4537,
+        "precision": 0.9098,
+        "recall": 0.7619,
+        "tp": 2361,
+        "fp": 234,
+        "fn": 738,
+        "tn": 85248
+      },
+      "roc_auc": 0.9761,
+      "average_precision": 0.8696
+    }
+  },
+  "D_xgb_fe_nan": {
+    "cal_raw_ap": 0.82,
+    "cal_raw_auc": 0.9701,
+    "test": {
+      "review": {
+        "threshold": 0.0306,
+        "precision": 0.2994,
+        "recall": 0.9148,
+        "tp": 2835,
+        "fp": 6634,
+        "fn": 264,
+        "tn": 78848
+      },
+      "block": {
+        "threshold": 0.6429,
+        "precision": 0.9229,
+        "recall": 0.6722,
+        "tp": 2083,
+        "fp": 174,
+        "fn": 1016,
+        "tn": 85308
+      },
+      "roc_auc": 0.9722,
+      "average_precision": 0.8309
+    }
+  },
+  "selected": "B_lgbm_tuned_fe",
+  "selected_test": {
+    "review": {
+      "threshold": 0.0455,
+      "precision": 0.4437,
+      "recall": 0.9051,
+      "tp": 2805,
+      "fp": 3517,
+      "fn": 294,
+      "tn": 81965
+    },
+    "block": {
+      "threshold": 0.575,
+      "precision": 0.9287,
+      "recall": 0.7477,
+      "tp": 2317,
+      "fp": 178,
+      "fn": 782,
+      "tn": 85304
+    },
+    "roc_auc": 0.9771,
+    "average_precision": 0.8711,
+    "test_n": 88581,
+    "test_fraud": 3099,
+    "expected_loss": {
+      "gated_loss_per_10k": 6587.29,
+      "no_gate_loss_per_10k": 51593.48,
+      "blocked": 2495,
+      "reviewed": 3827,
+      "missed_fraud": 294,
+      "false_blocked": 178,
+      "assumptions": {
+        "review_cost_usd": 2.0,
+        "false_block_cost_usd": 15.0,
+        "fraud_loss": "transaction amount",
+        "review_outcome": "review catches fraud (human resolves correctly)"
+      }
+    }
+  }
+}
