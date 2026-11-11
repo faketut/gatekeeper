@@ -5,7 +5,13 @@ https://github.com/faketut/gatekeeper
 
 ## Live demo
 
-Try it in ten seconds — no installs, no credentials:
+Watch the project working — 2:24, with a real screen recording of the
+live demo (clicking through the $49 ALLOW, $2,000 REVIEW, and $12,000
+BLOCK cases):
+
+<video src="https://raw.githubusercontent.com/faketut/gatekeeper/main/assets/gatekeeper-demo-v2.mp4" controls width="100%"></video>
+
+Try it yourself in ten seconds — no installs, no credentials:
 
 ```bash
 python3 demo/run_demo.py
