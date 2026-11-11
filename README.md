@@ -5,13 +5,10 @@ https://github.com/faketut/gatekeeper
 
 ## Live demo
 
-Watch the project working — 2:24, with a real screen recording of the
-live demo (clicking through the $49 ALLOW, $2,000 REVIEW, and $12,000
-BLOCK cases):
+The dashboard, working — $49 → ALLOW, $2,000 at 3am → REVIEW in the
+human approval queue, $12,000 burst → BLOCK:
 
-![Gatekeeper demo — live demo showcase (2:24)](https://faketut.github.io/gatekeeper/assets/gatekeeper-demo-v2.mp4)
-
-[Watch the demo video (mp4, 2:24)](https://faketut.github.io/gatekeeper/assets/gatekeeper-demo-v2.mp4)
+![Gatekeeper dashboard — live demo, clicking through ALLOW, REVIEW, BLOCK](assets/gatekeeper-dashboard-demo.gif)
 
 Try it yourself in ten seconds — no installs, no credentials:
 
