@@ -1,8 +1,26 @@
 # Gatekeeper — risk-scored payments for AI agents
 
 PayPal AI Hackathon entry (due Nov 12, 2026). Public repo:
-https://github.com/faketut/gatekeeper — demo video v2 (2:24, with a live
-demo showcase) is at `video/out/gatekeeper-demo-v2.mp4`.
+https://github.com/faketut/gatekeeper
+
+## Live demo
+
+Try it in ten seconds — no installs, no credentials:
+
+```bash
+python3 demo/run_demo.py
+```
+
+Three cases, verified: a $49 daytime purchase scores 5.7% → ALLOW; a
+$2,000 electronics purchase at 3am from a new device scores 45.0% →
+REVIEW (it waits in the human approval queue, not auto-blocked); a
+$12,000 3am burst scores 78.8% → BLOCK (no order is created). That
+quick demo uses the behavioural scorer; the full interactive version
+below — gateway, trained IEEE-CIS model, and approval queue UI — is in
+"Full stack": `uvicorn gateway.app:app --reload`, then open
+`ui/index.html`. It scores real transaction rows with the shipped v4
+model (`POST /propose-ieee`, AUC 0.9771) and lets you approve or reject
+REVIEWed payments before any PayPal order is created.
 
 ## Thesis
 
@@ -46,7 +64,6 @@ flowchart LR
 | Training pipeline (IEEE-CIS, gradient boosting) | `risk/train_ieee.py`, `kaggle-kernel/` | Done — Kaggle v4 full-data run promoted (see "Measured on real IEEE-CIS"); v5 tested, not promoted |
 | IEEE model inference | `gatekeeper/ieee_model.py` | Done; v4 thresholds REVIEW 0.0455 / BLOCK 0.5750, chosen on calibration split only |
 | PayPal sandbox client (Orders v2) | `gatekeeper/paypal_client.py` | Done (OAuth token caching, create/get/capture); real sandbox order verified CREATED 2026-10-27 (capture needs payer approval via the approve link) |
-| Demo video (<3 min) | `video/` | v2 done 2026-11-11 (2:24): S3 is a real screen recording of the live demo page; build sources + final cut in `video/` |
 | Disputes v1 client + evidence draft | `gatekeeper/disputes.py` | Implemented (list/show/evidence/accept/escalate/appeal, sandbox-only adjudicate); draft is merchant-review only, never auto-submitted |
 | Approval API + execute/capture | `gateway/app.py` | Done, gateway-flow tests pass |
 | Approval UI | `ui/index.html` | Done (approve/reject/order/capture) |

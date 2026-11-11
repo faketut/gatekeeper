@@ -1,1 +1,0 @@
-Gatekeeper. The brakes for agentic commerce. An AI shopping agent proposes a payment — and before any money moves, risk decides: approve, hold, or block.

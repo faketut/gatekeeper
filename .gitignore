@@ -16,9 +16,6 @@ artifacts/*
 !artifacts/model.pkl
 !artifacts/metrics.json
 !artifacts/model_card-kaggle-v4.md
-# Video build intermediates (reproducible from video/ sources with
-# video/assemble.sh / assemble-v2.sh); the shipped cut is v2 only.
-video/segments/
-video/record/shots/
-video/record/verify/
-video/out/gatekeeper-demo-v1.mp4
+# Video build sources + final cut, kept locally only (the v2 cut is
+# the submission video, uploaded to YouTube separately).
+video/
