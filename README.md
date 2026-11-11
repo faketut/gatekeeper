@@ -137,15 +137,3 @@ at `artifacts/model-local-150k-backup.pkl`. A first run with a
 13.8% fraud-enriched sample was discarded — do not quote it.
 Real sandbox order also verified CREATED (capture needs payer
 approval via the approve link).
-
-## What is NOT done yet
-
-- [x] <3 min video — v2 done 2026-11-11 (2:24, live demo showcase in S3)
-- [x] Push to GitHub — public at https://github.com/faketut/gatekeeper
-- [ ] YouTube upload of the v2 video + Devpost submission, due Nov 12, 2026
-      18:59 EST (23:59 UTC)
-
-## Prize fit
-
-Best Use of PayPal+AI (payment rails + risk model are inseparable),
-Most Impactful (the trust problem of agentic commerce), Most Creative.
