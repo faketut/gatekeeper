@@ -69,5 +69,5 @@ not accuracy on a 3.5%-fraud dataset.
 Best Use of PayPal+AI, Most Impactful, Most Creative.
 
 ## Links — FILL AT SUBMIT TIME
-- Public repo: ___
-- Demo URL / video (<3 min): ___
+- Public repo: https://github.com/faketut/gatekeeper
+- Demo URL / video (<3 min): ___ (YouTube link — upload pending; video v2 recorded 2026-11-11, 2:24, S3 is a real screen recording of the live demo page — see video/v2-plan-2026-11-05.md and video/out/gatekeeper-demo-v2.mp4; demo page is the local ts-space `gatekeeper-live-demo`, no hosted URL verified yet)

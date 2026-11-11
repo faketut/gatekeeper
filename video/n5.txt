@@ -1,0 +1,1 @@
+And this is not only a model demo. Through PayPal sandbox Orders, Gatekeeper creates a real order — verified created, with an approve link. Capture still needs the payer's approval, exactly as PayPal's lifecycle requires. If a chargeback follows, the dispute evidence is drafted for merchant review — never auto-submitted.

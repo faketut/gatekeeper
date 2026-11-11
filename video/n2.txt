@@ -1,0 +1,1 @@
+Every agentic commerce demo wires an agent straight to a wallet. Nobody ships the brakes. A normal purchase, a late-night electronics order from a new device, a burst of high-value orders — to a wallet, they all look the same. Gatekeeper scores each proposal first, and the agent can only execute what is approved.

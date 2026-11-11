@@ -1,0 +1,21 @@
+# Gatekeeper demo video narration — v1 (follows the 2026-10-27 script structure:
+# problem, Demo 1 behavioural scorer, Demo 2 real IEEE-CIS v4 model,
+# PayPal sandbox reality check, honest close). One block per slide.
+
+--- S1
+Gatekeeper. The brakes for agentic commerce. An AI shopping agent proposes a payment — and before any money moves, risk decides: approve, hold, or block.
+
+--- S2
+Every agentic commerce demo wires an agent straight to a wallet. Nobody ships the brakes. A normal purchase, a late-night electronics order from a new device, a burst of high-value orders — to a wallet, they all look the same. Gatekeeper scores each proposal first, and the agent can only execute what is approved.
+
+--- S3
+Here is the live demo. A forty-nine dollar daytime purchase scores five point seven percent: allow. A two-thousand dollar order at three a.m. from a new device scores forty-five percent: review — it waits in the approval queue, and nothing moves until a human says yes. A twelve-thousand dollar three a.m. burst scores seventy-eight point eight percent: blocked outright. These demo thresholds, thirty-five and seventy-five percent, are the behavioural scorer's — not the trained model's.
+
+--- S4
+The real model is trained on the full IEEE-CIS fraud data: five hundred ninety thousand transactions, three point five percent fraud. On held-out test data, it scores zero point nine seven seven one ROC AUC, and zero point eight seven one one average precision. Review catches ninety point five percent of fraud while reviewing only seven point one percent of transactions. Auto-block is ninety-two point nine percent precise, and catches seventy-four point eight percent of fraud outright. Gated expected loss: six thousand five hundred eighty-seven dollars per ten thousand transactions, versus fifty-one thousand five hundred ninety-three with no gate.
+
+--- S5
+And this is not only a model demo. Through PayPal sandbox Orders, Gatekeeper creates a real order — verified created, with an approve link. Capture still needs the payer's approval, exactly as PayPal's lifecycle requires. If a chargeback follows, the dispute evidence is drafted for merchant review — never auto-submitted.
+
+--- S6
+Honestly: review precision is forty-four point four percent. Most reviewed transactions are legitimate — that is the price of catching over ninety percent of fraud at three point five percent prevalence. We kept the experiment that did not beat version four out of the headline, and published the code, the model, and the numbers. Gatekeeper: brakes first, then commerce.
