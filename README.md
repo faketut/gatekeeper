@@ -1,13 +1,5 @@
 # Gatekeeper — risk-scored payments for AI agents
 
-PayPal AI Hackathon entry (due Nov 12, 2026). Public repo:
-https://github.com/faketut/gatekeeper
-
-## Live demo
-
-The dashboard, working — $49 → ALLOW, $2,000 at 3am → REVIEW in the
-human approval queue, $12,000 burst → BLOCK:
-
 ![Gatekeeper dashboard — live demo, clicking through ALLOW, REVIEW, BLOCK](assets/gatekeeper-dashboard-demo.gif)
 
 Try it yourself in ten seconds — no installs, no credentials:
